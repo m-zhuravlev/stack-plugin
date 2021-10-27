@@ -22,7 +22,7 @@
                class="org.example.action.ScriptActionGroup"
                popup="true"
                description="Maintenance scripts"
-               text="Maintenance scripts"
+               text="Some chages"
                icon="/icons/view/view_script.png">
             <add-to-group group-id="NavBarToolBar" anchor="first"/>
             <add-to-group group-id="MainToolBar" anchor="last"/>
