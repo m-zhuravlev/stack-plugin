@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>org.example.stack-plugin</id>
+    <name>Plugin display name here</name>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="ScriptActionGroup"
+               class="org.example.action.ScriptActionGroup"
+               popup="true"
+               description="Maintenance scripts"
+               text="Maintenance scripts"
+               icon="/icons/view/view_script.png">
+            <add-to-group group-id="NavBarToolBar" anchor="first"/>
+            <add-to-group group-id="MainToolBar" anchor="last"/>
+        </group>
+    </actions>
+</idea-plugin>
